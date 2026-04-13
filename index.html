@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RRsádrokartony</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roman Baloun</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">O mně</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>O mně</h2>
+            <p> In hac habitasse platea dictumst. Phasellus nulla augue, laoreet ac ante vel, convallis sodales ligula. Etiam vitae magna diam. Ut vitae est vehicula, rhoncus urna non, aliquam sapien. Sed molestie elit a lectus faucibus finibus. Proin orci mauris, placerat et dolor vitae, dapibus elementum velit. Cras nulla dolor, semper ac arcu nec, sollicitudin sodales purus. </p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Služby</h2>
+            <div class="services-list">
+                <div class="service">
+                    <h3>Montáž sádrokartonů</h3>
+                    <p>Popis služby 1...</p>
+                </div>
+                <div class="service">
+                    <h3>Drobné opravy</h3>
+                    <p>Popis služby 2...</p>
+                </div>
+                <div class="service">
+                    <h3>Zateplení</h3>
+                    <p>Popis služby 3...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Foto 1">
+                <img src="image2.jpg" alt="Foto 2">
+                <img src="image3.jpg" alt="Foto 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Kontaktní informace</h3>
+                    <p><strong>Telefon:</strong> +420 721 672 739</p>
+                    <p><strong>Email:</strong> RRsadrokartony@seznam.cz</p>
+                    <p><strong>Adresa:</strong> Sokolská 670, 538 03, Heřmanův Městec</p>
+                    <p><strong>IČO:</strong> 24530221</p>
+                </div>
+                <div class="contact-form">
+                    <form id="form">
+                        <label for="name">Jméno</label>
+                        <input type="text" id="name" name="name" minlength="2" maxlength="64" required>
+
+                        <label for="service">Služba</label>
+                        <select id="service" name="service" required>
+                            <option>Montáž sádrokartonů</option>
+                            <option>Drobné opravy</option>
+                            <option>Zateplení</option>
+                        </select>
+
+                        <label for="message">Zpráva</label>
+                        <textarea id="message" name="message" minlength="8" maxlength="1024" required></textarea>
+
+                        <button type="submit" onclick="openMailClient()">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 - Roman Baloun</p>
+        </div>
+    </footer>
+    <script src="./contact.js"></script>
+</body>
+</html>
