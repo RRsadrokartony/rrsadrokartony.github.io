@@ -15,4 +15,8 @@ function openMailClient() {
 function select_service(index) {
     contact_service.selectedIndex = index
     contact.scrollIntoView();
+
+    contact_service.classList.remove("mark");
+    void contact_service.offsetWidth;
+    contact_service.classList.add("mark");
 }
