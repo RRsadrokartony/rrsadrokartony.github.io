@@ -87,6 +87,19 @@ p {
     margin-bottom: 10px;
 }
 
+.service img {
+    width: 100%;
+}
+
+.service {
+    transition: 0.2s;
+}
+
+.service:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
 .gallery {
     display: flex;
     gap: 20px;
