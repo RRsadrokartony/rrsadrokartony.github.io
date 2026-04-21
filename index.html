@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles/main.css">
+    <link rel="stylesheet" href="static/styles/photoswipe.min.css">
     <title>RRsádrokartony</title>
 </head>
 <body>
@@ -35,17 +36,17 @@
                 <div class="service" role="button" tabindex="0" onclick="select_service(0)">
                     <h3>Montáž sádrokartonů</h3>
                     <p>Čisté řešení pro úpravu interiéru na míru.</p>
-                    <img src="/static/images/drywall.jpg" alt=""/>
+                    <img src="static/images/drywall.jpg" alt=""/>
                 </div>
                 <div class="service" role="button" tabindex="0" onclick="select_service(1)">
                     <h3>Drobné opravy</h3>
                     <p>Spolehlivé opravy bez zbytečného čekání.</p>
-                    <img src="/static/images/minor-repairs.jpg" alt=""/>
+                    <img src="static/images/minor-repairs.jpg" alt=""/>
                 </div>
                 <div class="service" role="button" tabindex="0" onclick="select_service(2)">
                     <h3>Zateplení</h3>
                     <p>Ušetřete za energie díky kvalitnímu zateplení.</p>
-                    <img src="/static/images/isolation.jpg" alt=""/>
+                    <img src="static/images/isolation.jpg" alt=""/>
                 </div>
             </div>
         </div>
@@ -55,10 +56,18 @@
         <div class="container">
             <h2>Galerie</h2>
             <div class="gallery">
-                <img src="/static/images/01.jpg" alt="">
-                <img src="/static/images/02.jpg" alt="">
-                <img src="/static/images/03.jpg" alt="">
-                <img src="/static/images/04.jpg" alt="">
+                <a href="static/images/01.jpg" data-pswp-width="1536" data-pswp-height="1536">
+                    <img src="static/images/01.jpg" />
+                </a>
+                <a href="static/images/02.jpg" data-pswp-width="1536" data-pswp-height="1536">
+                    <img src="static/images/02.jpg" />
+                </a>
+                <a href="static/images/03.jpg" data-pswp-width="1536" data-pswp-height="1536">
+                    <img src="static/images/03.jpg" />
+                </a>
+                <a href="static/images/04.jpg" data-pswp-width="1536" data-pswp-height="1536">
+                    <img src="static/images/04.jpg" />
+                </a>
             </div>
         </div>
     </section>
@@ -101,6 +110,7 @@
             <p>&copy; 2026 - Roman Baloun</p>
         </div>
     </footer>
-    <script src="./contact.js"></script>
+    <script src="static/scripts/contact.js"></script>
+    <script src="static/scripts/photoswipe.js" type="module"></script>
 </body>
 </html>
