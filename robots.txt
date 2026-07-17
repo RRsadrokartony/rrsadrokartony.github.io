@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rrsadrokartony.github.io/sitemap.xml
