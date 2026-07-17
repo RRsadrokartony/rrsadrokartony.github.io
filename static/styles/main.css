@@ -82,7 +82,7 @@ p {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.service h3 {
+.service b {
     font-size: 1.5em;
     color: #005f87;
     margin-bottom: 10px;
