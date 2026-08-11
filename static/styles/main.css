@@ -238,6 +238,9 @@ form input,
         background-color: #005f87;
         color: white;
         padding: 20px 0;
+    }
+
+    .footer {
         text-align: center;
     }
 
